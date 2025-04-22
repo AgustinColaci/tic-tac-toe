@@ -2,7 +2,7 @@
   <div class="contenedor">
     <h1 class="title title--01">Tic Tac Toe</h1>
     <div class="contenedor__turno">
-      <h2 class="title title--02">Turno de:</h2>
+      <h2 class="title title--02">Tu turno:</h2>
       <button 
         class="btn"
         :class="activarBoton(FIGURA.X)"
@@ -22,7 +22,7 @@
       <div class="fila fila-rst" style="margin-top: 2rem;">
         <h3 class="title title--03"
         v-show="resultado"
-        style="color: #fff;">Resultado: {{ resultado }}</h3>
+        style="color: #fff;">{{ resultado }}</h3>
         <button 
           class="btn btn-reset"
           @click="resetar()">Reset</button>
